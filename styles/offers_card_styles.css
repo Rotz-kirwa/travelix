@@ -1,0 +1,150 @@
+/* Enhanced Offers Card Styles */
+.offers_item {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+}
+
+.offers_item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.offers_image_container {
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    position: relative;
+    height: 220px !important;
+}
+
+.offers_image_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: transform 0.3s ease;
+}
+
+.offers_image_background {
+    transition: transform 0.3s ease;
+}
+
+.offers_item:hover .offers_image_background {
+    transform: scale(1.05);
+}
+
+.offer_name {
+    background: linear-gradient(135deg, #fa9e1b, #ff6b35);
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 4px 15px rgba(250, 158, 27, 0.3);
+}
+
+.offers_content {
+    padding: 20px !important;
+}
+
+.offers_price {
+    font-size: 28px !important;
+    font-weight: 800 !important;
+    color: #2d2c2c !important;
+    margin-bottom: 10px;
+}
+
+.offers_price span {
+    font-size: 16px !important;
+    color: #999 !important;
+    margin-left: 10px;
+}
+
+.offers_price span del {
+    color: #ccc !important;
+    margin-right: 8px;
+}
+
+.offers_rating {
+    margin: 15px 0 !important;
+}
+
+.offers_text {
+    color: #666 !important;
+    line-height: 1.6 !important;
+    margin: 15px 0 20px 0 !important;
+    font-size: 14px !important;
+}
+
+.book_button {
+    background: linear-gradient(135deg, #fa9e1b, #ff6b35) !important;
+    border: none !important;
+    border-radius: 25px !important;
+    padding: 12px 30px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(250, 158, 27, 0.3) !important;
+}
+
+.book_button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(250, 158, 27, 0.4) !important;
+}
+
+.book_button a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+/* Discount Badge */
+.offers_price span:last-child {
+    background: linear-gradient(135deg, #ff6b35, #fa9e1b);
+    color: #fff !important;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-left: 15px;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+}
+
+/* Rating Stars Enhancement */
+.rating_r i::before {
+    color: #ffd700 !important;
+    font-size: 16px !important;
+    margin-right: 3px !important;
+}
+
+/* Grid Spacing */
+.offers_grid .row {
+    margin: 0 -15px;
+}
+
+.offers_grid [class*="col-"] {
+    padding: 0 15px;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .offers_price {
+        font-size: 24px !important;
+    }
+    
+    .offers_content {
+        padding: 15px !important;
+    }
+    
+    .book_button {
+        padding: 10px 25px !important;
+        font-size: 12px !important;
+    }
+}
