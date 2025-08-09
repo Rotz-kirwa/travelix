@@ -13,6 +13,39 @@
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 <link rel="stylesheet" type="text/css" href="styles/mobile-menu-fix.css">
+<link rel="stylesheet" type="text/css" href="styles/live-notifications.css">
+<script src="js/meek-notifications.js"></script>
+<style>
+.whatsapp-button {
+	position: fixed;
+	bottom: 80px;
+	right: 20px;
+	z-index: 1000;
+}
+
+.whatsapp-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	background-color: #25D366;
+	border-radius: 50%;
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+	box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+	transition: all 0.3s ease;
+}
+
+.whatsapp-link:hover {
+	background-color: #128C7E;
+	color: white;
+	text-decoration: none;
+	transform: scale(1.1);
+	box-shadow: 0 6px 16px rgba(37, 211, 102, 0.6);
+}
+</style>
 </head>
 
 <body>
@@ -41,6 +74,10 @@
 					<div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
 						<div class="logo_container">
 							<div class="logo"><a href="index.html"><img src="images/logo.png" alt="">Wildwave Safaris</a></div>
+						</div>
+						<div class="header_social_nav ml-3" style="display: flex; align-items: center; gap: 15px;">
+							<a href="https://www.instagram.com/wildwavesafaris?igsh=OTRjeGoyeXN4cGox" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; font-size: 20px; text-decoration: none; transition: all 0.3s ease; padding: 5px; color: #E4405F;"><i class="fa fa-instagram"></i></a>
+							<a href="https://www.tiktok.com/@wildwavesafaris?_t=ZM-8yaxQnBH5SY&_r=1" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; color: #000000; font-weight: bold; font-size: 18px; text-decoration: none; transition: all 0.3s ease; padding: 5px;">T</a>
 						</div>
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
@@ -80,6 +117,13 @@
 				<li class="menu_item"><a href="contact.html">Contact</a></li>
 			</ul>
 		</div>
+	</div>
+
+	<!-- WhatsApp Button -->
+	<div class="whatsapp-button">
+		<a href="https://wa.me/254713241666" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+			<i class="fa fa-whatsapp"></i>
+		</a>
 	</div>
 
 	<!-- Accommodations Hero -->
@@ -497,16 +541,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row" style="margin-top: 30px;">
-				<div class="col text-center">
-					<div style="background: linear-gradient(135deg, #fa9e1b 0%, #e67e22 100%); padding: 40px; border-radius: 15px; color: white;">
-						<i class="fa fa-video-camera" style="font-size: 48px; margin-bottom: 20px;"></i>
-						<h3 style="margin-bottom: 15px;">360° Virtual Tour</h3>
-						<p style="margin-bottom: 25px; opacity: 0.9;">Experience our accommodations from the comfort of your home with our immersive virtual tour</p>
-						<a href="#" class="btn" style="background: white; color: #fa9e1b; padding: 12px 30px; border-radius: 25px; font-weight: 600; text-decoration: none;">Start Virtual Tour</a>
-					</div>
-				</div>
-			</div>
+
 		</div>
 	</div>
 
@@ -943,19 +978,7 @@
 						<div>Copyright &copy;2025 All rights reserved | Wildwave Safaris</div>
 					</div>
 				</div>
-				<div class="col-lg-9 order-lg-2 order-1">
-					<div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
-						<div class="footer_nav">
-							<ul class="footer_nav_list">
-								<li class="footer_nav_item"><a href="home.html">home</a></li>
-								<li class="footer_nav_item"><a href="about.html">about us</a></li>
-								<li class="footer_nav_item"><a href="destinations.html">destinations</a></li>
-								<li class="footer_nav_item"><a href="accommodations.html">accommodations</a></li>
-								<li class="footer_nav_item"><a href="contact.html">contact</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+
 			</div>
 		</div>
 	</div>

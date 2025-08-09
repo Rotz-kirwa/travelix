@@ -12,6 +12,116 @@
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 <link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/live-notifications.css">
+<script src="js/meek-notifications.js"></script>
+<style>
+.whatsapp-button {
+	position: fixed;
+	bottom: 80px;
+	right: 20px;
+	z-index: 1000;
+}
+
+.whatsapp-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	background-color: #25D366;
+	border-radius: 50%;
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+	box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+	transition: all 0.3s ease;
+}
+
+.whatsapp-link:hover {
+	background-color: #128C7E;
+	color: white;
+	text-decoration: none;
+	transform: scale(1.1);
+	box-shadow: 0 6px 16px rgba(37, 211, 102, 0.6);
+}
+
+/* Mobile video optimization */
+.travel_video {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.travel_video video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	object-fit: cover;
+}
+
+@media (max-width: 768px) {
+	.travel_video {
+		height: 60vh;
+	}
+	
+	.travel_video video {
+		width: 100vw;
+		height: 60vh;
+		object-fit: cover;
+		object-position: center center;
+		max-width: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.travel_video {
+		height: 50vh;
+	}
+	
+	.travel_video video {
+		width: 100vw;
+		height: 50vh;
+		transform: translate(-50%, -50%) scale(1.1);
+	}
+}
+
+.header_social_nav {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.header_social_link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	padding: 5px;
+}
+
+.header_social_link i.fa-instagram {
+	color: #E4405F;
+}
+
+.header_social_link.tiktok {
+	color: #000000;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.header_social_link:hover {
+	text-decoration: none;
+	transform: scale(1.1);
+}
+</style>
 </head>
 
 <body>
@@ -71,6 +181,10 @@
 					<div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
 						<div class="logo_container">
 							<div class="logo"><a href="index.html"><img src="images/logo.png" alt="">Wild Wave Safari</a></div>
+						</div>
+						<div class="header_social_nav ml-3">
+							<a href="https://www.instagram.com/wildwavesafaris?igsh=OTRjeGoyeXN4cGox" target="_blank" rel="noopener noreferrer" class="header_social_link"><i class="fa fa-instagram"></i></a>
+							<a href="https://www.tiktok.com/@wildwavesafaris?_t=ZM-8yaxQnBH5SY&_r=1" target="_blank" rel="noopener noreferrer" class="header_social_link tiktok">T</a>
 						</div>
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
@@ -148,6 +262,13 @@
 		<div class="video_caption">
 			<p>Unforgettable journeys crafted just for you.</p>
 		</div>
+	</div>
+
+	<!-- WhatsApp Button -->
+	<div class="whatsapp-button">
+		<a href="https://wa.me/254713241666" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+			<i class="fa fa-whatsapp"></i>
+		</a>
 	</div>
 
 	<!-- Contact -->
@@ -347,9 +468,7 @@
 			<div class="row">
 				<div class="col-lg-3 order-lg-1 order-2  ">
 					<div class="copyright_content d-flex flex-row align-items-center">
-						<div><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+						<div>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by ALGOKING</div>
 					</div>
 				</div>
 				<div class="col-lg-9 order-lg-2 order-1">

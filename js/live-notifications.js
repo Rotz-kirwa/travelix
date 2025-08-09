@@ -1,103 +1,78 @@
-// Live Notifications System
-class LiveNotifications {
-    constructor() {
-        this.notifications = [
-            { name: "Sarah M.", location: "Maldives", time: "2 minutes ago", type: "booking" },
-            { name: "John D.", location: "Swiss Alps", time: "5 minutes ago", type: "booking" },
-            { name: "Emma L.", location: "Santorini", time: "8 minutes ago", type: "inquiry" },
-            { name: "Michael R.", location: "Bali", time: "12 minutes ago", type: "booking" },
-            { name: "Lisa K.", location: "Dubai", time: "15 minutes ago", type: "booking" },
-            { name: "David W.", location: "Tokyo", time: "18 minutes ago", type: "inquiry" },
-            { name: "Anna S.", location: "Paris", time: "22 minutes ago", type: "booking" },
-            { name: "Tom B.", location: "New York", time: "25 minutes ago", type: "booking" },
-            { name: "Maria G.", location: "Rome", time: "28 minutes ago", type: "inquiry" },
-            { name: "Chris P.", location: "London", time: "32 minutes ago", type: "booking" }
-        ];
-        this.currentIndex = 0;
-        this.init();
-    }
+// Live Notifications Script
+const travelers = [
+    { name: "Sarah Johnson", action: "just booked", destination: "Masai Mara Safari" },
+    { name: "Michael Chen", action: "is traveling to", destination: "Serengeti National Park" },
+    { name: "Emma Wilson", action: "just arrived in", destination: "Zanzibar Beach" },
+    { name: "David Thompson", action: "booked", destination: "Mount Kilimanjaro Trek" },
+    { name: "Lisa Rodriguez", action: "is exploring", destination: "Ngorongoro Crater" },
+    { name: "James Miller", action: "just booked", destination: "Hot Air Balloon Safari" },
+    { name: "Anna Garcia", action: "arrived in", destination: "Amboseli National Park" },
+    { name: "Robert Taylor", action: "is traveling to", destination: "Lake Nakuru" },
+    { name: "Maria Santos", action: "just booked", destination: "Cultural Safari Experience" },
+    { name: "John Anderson", action: "arrived in", destination: "Tsavo National Park" },
+    { name: "Sophie Brown", action: "is exploring", destination: "Diani Beach" },
+    { name: "Alex Kumar", action: "just booked", destination: "Big Five Game Drive" },
+    { name: "Jennifer White", action: "is traveling to", destination: "Samburu National Reserve" },
+    { name: "Carlos Martinez", action: "just arrived in", destination: "Mombasa Coast" },
+    { name: "Rachel Green", action: "booked", destination: "Gorilla Tracking Adventure" },
+    { name: "Kevin O'Connor", action: "is exploring", destination: "Hell's Gate National Park" },
+    { name: "Priya Patel", action: "just booked", destination: "Sunrise Safari Experience" },
+    { name: "Thomas Mueller", action: "arrived in", destination: "Maasai Village Tour" },
+    { name: "Isabella Rossi", action: "is traveling to", destination: "Lake Naivasha" },
+    { name: "Ahmed Hassan", action: "just booked", destination: "Desert Safari Adventure" },
+    { name: "Grace Ochieng", action: "is exploring", destination: "Aberdare National Park" },
+    { name: "Pierre Dubois", action: "arrived in", destination: "Mount Kenya Trek" },
+    { name: "Yuki Tanaka", action: "just booked", destination: "Photographic Safari" },
+    { name: "Oliver Smith", action: "is traveling to", destination: "Lamu Island" },
+    { name: "Fatima Al-Zahra", action: "just arrived in", destination: "Watamu Beach" },
+    { name: "Lucas Silva", action: "booked", destination: "Night Game Drive" },
+    { name: "Chloe Anderson", action: "is exploring", destination: "Ol Pejeta Conservancy" },
+    { name: "Raj Sharma", action: "just booked", destination: "Walking Safari" },
+    { name: "Nina Petrov", action: "arrived in", destination: "Shimba Hills Reserve" },
+    { name: "Hassan Mwangi", action: "is traveling to", destination: "Malindi Marine Park" }
+];
 
-    init() {
-        this.createNotificationContainer();
-        this.startNotifications();
-    }
+let currentIndex = 0;
+let notificationTimeout;
 
-    createNotificationContainer() {
-        const container = document.createElement('div');
-        container.id = 'live-notifications';
-        container.innerHTML = `
-            <div class="notification-popup" id="notification-popup">
-                <div class="notification-content">
-                    <div class="notification-icon">
-                        <i class="fa fa-check-circle"></i>
-                    </div>
-                    <div class="notification-text">
-                        <div class="notification-message"></div>
-                        <div class="notification-time"></div>
-                    </div>
-                    <div class="notification-close">
-                        <i class="fa fa-times"></i>
-                    </div>
-                </div>
-            </div>
-        `;
-        document.body.appendChild(container);
-
-        // Add close functionality
-        container.querySelector('.notification-close').addEventListener('click', () => {
-            this.hideNotification();
-        });
-    }
-
-    showNotification() {
-        const notification = this.notifications[this.currentIndex];
-        const popup = document.getElementById('notification-popup');
-        const messageEl = popup.querySelector('.notification-message');
-        const timeEl = popup.querySelector('.notification-time');
-        const iconEl = popup.querySelector('.notification-icon i');
-
-        // Set content
-        if (notification.type === 'booking') {
-            messageEl.innerHTML = `<strong>${notification.name}</strong> just booked a trip to <strong>${notification.location}</strong>`;
-            iconEl.className = 'fa fa-check-circle';
-        } else {
-            messageEl.innerHTML = `<strong>${notification.name}</strong> is viewing <strong>${notification.location}</strong>`;
-            iconEl.className = 'fa fa-eye';
-        }
-        
-        timeEl.textContent = notification.time;
-
-        // Show notification
-        popup.classList.add('show');
-
-        // Auto hide after 5 seconds
-        setTimeout(() => {
-            this.hideNotification();
-        }, 5000);
-
-        // Move to next notification
-        this.currentIndex = (this.currentIndex + 1) % this.notifications.length;
-    }
-
-    hideNotification() {
-        const popup = document.getElementById('notification-popup');
-        popup.classList.remove('show');
-    }
-
-    startNotifications() {
-        // Show first notification after 2 seconds
-        setTimeout(() => {
-            this.showNotification();
-        }, 2000);
-
-        // Then show every 6-8 seconds
-        setInterval(() => {
-            this.showNotification();
-        }, 7000);
-    }
+function showNotification() {
+    const notification = document.getElementById('live-notification');
+    const travelerName = document.getElementById('traveler-name');
+    const actionText = document.getElementById('action-text');
+    const destination = document.getElementById('destination');
+    
+    const traveler = travelers[currentIndex];
+    
+    travelerName.textContent = traveler.name;
+    actionText.textContent = traveler.action;
+    destination.textContent = traveler.destination;
+    
+    notification.classList.add('show');
+    
+    // Hide notification after 3 seconds
+    notificationTimeout = setTimeout(() => {
+        hideNotification();
+    }, 3000);
+    
+    currentIndex = (currentIndex + 1) % travelers.length;
 }
 
-// Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    new LiveNotifications();
+function hideNotification() {
+    const notification = document.getElementById('live-notification');
+    notification.classList.remove('show');
+}
+
+// Close notification when X is clicked
+document.addEventListener('DOMContentLoaded', function() {
+    const closeBtn = document.querySelector('.notification-close');
+    closeBtn.addEventListener('click', function() {
+        clearTimeout(notificationTimeout);
+        hideNotification();
+    });
+    
+    // Show first notification after 3.5 seconds
+    setTimeout(showNotification, 3500);
+    
+    // Show subsequent notifications every 3.5 seconds
+    setInterval(showNotification, 3500);
 });

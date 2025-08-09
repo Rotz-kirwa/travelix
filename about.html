@@ -10,6 +10,39 @@
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css?v=9876543210">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/live-notifications.css">
+<script src="js/meek-notifications.js"></script>
+<style>
+.whatsapp-button {
+	position: fixed;
+	bottom: 80px;
+	right: 20px;
+	z-index: 1000;
+}
+
+.whatsapp-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	background-color: #25D366;
+	border-radius: 50%;
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+	box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+	transition: all 0.3s ease;
+}
+
+.whatsapp-link:hover {
+	background-color: #128C7E;
+	color: white;
+	text-decoration: none;
+	transform: scale(1.1);
+	box-shadow: 0 6px 16px rgba(37, 211, 102, 0.6);
+}
+</style>
 </head>
 
 <body>
@@ -39,6 +72,10 @@
 						<div class="logo_container">
 							<div class="logo"><a href="home.html"><img src="images/logo.png" alt="">Wildwave Safaris</a></div>
 						</div>
+						<div class="header_social_nav ml-3" style="display: flex; align-items: center; gap: 15px;">
+							<a href="https://www.instagram.com/wildwavesafaris?igsh=OTRjeGoyeXN4cGox" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; font-size: 20px; text-decoration: none; transition: all 0.3s ease; padding: 5px; color: #E4405F;"><i class="fa fa-instagram"></i></a>
+							<a href="https://www.tiktok.com/@wildwavesafaris?_t=ZM-8yaxQnBH5SY&_r=1" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; color: #000000; font-weight: bold; font-size: 18px; text-decoration: none; transition: all 0.3s ease; padding: 5px;">T</a>
+						</div>
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
 								<li class="main_nav_item"><a href="home.html">home</a></li>
@@ -46,6 +83,7 @@
 								<li class="main_nav_item"><a href="destinations.html">destinations</a></li>
 								<li class="main_nav_item"><a href="accommodations.html">accommodations</a></li>
 								<li class="main_nav_item"><a href="offers.html">special offers</a></li>
+								<li class="main_nav_item"><a href="booking.html">booking</a></li>
 								<li class="main_nav_item"><a href="contact.html">contact</a></li>
 							</ul>
 						</div>
@@ -68,9 +106,17 @@
 				<li class="menu_item"><a href="destinations.html">destinations</a></li>
 				<li class="menu_item"><a href="accommodations.html">accommodations</a></li>
 				<li class="menu_item"><a href="offers.html">special offers</a></li>
+				<li class="menu_item"><a href="booking.html">booking</a></li>
 				<li class="menu_item"><a href="contact.html">contact</a></li>
 			</ul>
 		</div>
+	</div>
+
+	<!-- WhatsApp Button -->
+	<div class="whatsapp-button">
+		<a href="https://wa.me/254713241666" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+			<i class="fa fa-whatsapp"></i>
+		</a>
 	</div>
 
 	<!-- About Hero -->
@@ -185,7 +231,7 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-6 mb-4">
 					<div class="text-center" style="padding: 40px 30px; background: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-						<img src="images/test_1.jpg" alt="Team Member" style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; object-fit: cover; border: 4px solid #fa9e1b;">
+						<img src="https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D" alt="Team Member" style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; object-fit: cover; border: 4px solid #fa9e1b;">
 						<h4 style="color: #2d2c2c; margin-bottom: 10px;">James Mwangi</h4>
 						<p style="color: #fa9e1b; font-weight: 600; margin-bottom: 15px;">Founder & Head Guide</p>
 						<p style="color: #666; line-height: 1.6;">Born and raised in Kenya with 20+ years of safari experience. James's deep knowledge of African wildlife and passion for conservation drives our authentic safari experiences.</p>
@@ -201,7 +247,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 mb-4">
 					<div class="text-center" style="padding: 40px 30px; background: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-						<img src="images/test_3.jpg" alt="Team Member" style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; object-fit: cover; border: 4px solid #fa9e1b;">
+						<img src="https://images.unsplash.com/photo-1592236943360-f5409792c176?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGVvcGxlJTIwJTIwYWZyaWNhbnN8ZW58MHx8MHx8fDA%3D" alt="Team Member" style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 25px; object-fit: cover; border: 4px solid #fa9e1b;">
 						<h4 style="color: #2d2c2c; margin-bottom: 10px;">David Ochieng</h4>
 						<p style="color: #fa9e1b; font-weight: 600; margin-bottom: 15px;">Cultural Experience Coordinator</p>
 						<p style="color: #666; line-height: 1.6;">Local cultural expert who facilitates authentic interactions with Maasai, Samburu, and other communities, ensuring respectful and meaningful cultural exchanges.</p>
@@ -254,9 +300,12 @@
 	</div>
 
 	<!-- Contact CTA -->
-	<div class="contact" style="padding: 100px 0;">
-		<div class="contact_background" style="background-image:url(images/contact_background.jpg)"></div>
-		<div class="container">
+	<div class="contact" style="padding: 100px 0; position: relative; overflow: hidden;">
+		<video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;" autoplay muted loop>
+			<source src="https://videos.pexels.com/video-files/4927916/4927916-uhd_2732_1440_25fps.mp4" type="video/mp4">
+		</video>
+		<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 2;"></div>
+		<div class="container" style="position: relative; z-index: 3;">
 			<div class="row">
 				<div class="col text-center">
 					<h2 class="section_title" style="color: white; margin-bottom: 30px;">Ready to Begin Your Luxury Journey?</h2>
@@ -266,21 +315,21 @@
 							<div style="background: rgba(255,255,255,0.15); padding: 40px 30px; border-radius: 15px; backdrop-filter: blur(10px);">
 								<i class="fa fa-phone" style="font-size: 32px; color: #fa9e1b; margin-bottom: 20px;"></i>
 								<h5 style="color: white; margin-bottom: 15px;">Call Our Experts</h5>
-								<p style="color: white; font-size: 16px;">+1 (555) 123-TRAVEL</p>
+								<p style="color: white; font-size: 16px;">+254 713 241 666</p>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 mb-3">
 							<div style="background: rgba(255,255,255,0.15); padding: 40px 30px; border-radius: 15px; backdrop-filter: blur(10px);">
 								<i class="fa fa-envelope" style="font-size: 32px; color: #fa9e1b; margin-bottom: 20px;"></i>
 								<h5 style="color: white; margin-bottom: 15px;">Email Us</h5>
-								<p style="color: white; font-size: 16px;">info@travelix.com</p>
+								<p style="color: white; font-size: 16px;">wildwavesafaris@gmail.com</p>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 mb-3">
 							<div style="background: rgba(255,255,255,0.15); padding: 40px 30px; border-radius: 15px; backdrop-filter: blur(10px);">
 								<i class="fa fa-map-marker" style="font-size: 32px; color: #fa9e1b; margin-bottom: 20px;"></i>
 								<h5 style="color: white; margin-bottom: 15px;">Visit Our Office</h5>
-								<p style="color: white; font-size: 16px;">123 Luxury Avenue, New York</p>
+								<p style="color: white; font-size: 16px;">Spur Mall, Thika Road, Nairobi, Kenya</p>
 							</div>
 						</div>
 					</div>
@@ -383,22 +432,10 @@
 			<div class="row">
 				<div class="col-lg-3 order-lg-1 order-2">
 					<div class="copyright_content d-flex flex-row align-items-center">
-						<div>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Travelix</div>
+						<div>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Wildwave Safaris</div>
 					</div>
 				</div>
-				<div class="col-lg-9 order-lg-2 order-1">
-					<div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
-						<div class="footer_nav">
-							<ul class="footer_nav_list">
-								<li class="footer_nav_item"><a href="home.html">home</a></li>
-								<li class="footer_nav_item"><a href="about.html">about us</a></li>
-								<li class="footer_nav_item"><a href="destinations.html">destinations</a></li>
-								<li class="footer_nav_item"><a href="accommodations.html">accommodations</a></li>
-								<li class="footer_nav_item"><a href="contact.html">contact</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+
 			</div>
 		</div>
 	</div>

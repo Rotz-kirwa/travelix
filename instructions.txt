@@ -1,0 +1,18 @@
+INSTRUCTIONS TO ADD NOTIFICATIONS TO ALL PAGES:
+
+Add this line in the <head> section of every page:
+<script src="js/global-notifications.js"></script>
+
+The notifications will now show:
+- "Recent Travel Alert: [Name] just booked [Location] - 15 Minutes Ago"
+- "Visitor Moved: [Name] moved to [Location] - 15 Minutes Ago" 
+- "Live Travel Update: [Name] viewing [Location] - 15 Minutes Ago"
+
+Features:
+- 20 different random names
+- Shows every 4 seconds
+- Displays on all pages automatically
+- 3 different alert types with different icons
+
+Names included:
+Sarah M., John D., Emma L., Michael R., Lisa K., David W., Anna S., Tom B., Maria G., Chris P., Jessica R., Robert K., Amanda T., James H., Sophie L., Daniel M., Rachel W., Kevin J., Nicole B., Mark S.

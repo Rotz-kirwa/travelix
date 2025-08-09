@@ -13,6 +13,70 @@
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 <link rel="stylesheet" type="text/css" href="styles/mobile-menu-fix.css">
+<link rel="stylesheet" type="text/css" href="styles/live-notifications.css">
+<script src="js/meek-notifications.js"></script>
+<style>
+.whatsapp-button {
+	position: fixed;
+	bottom: 80px;
+	right: 20px;
+	z-index: 1000;
+}
+
+.whatsapp-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	background-color: #25D366;
+	border-radius: 50%;
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+	box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+	transition: all 0.3s ease;
+}
+
+.whatsapp-link:hover {
+	background-color: #128C7E;
+	color: white;
+	text-decoration: none;
+	transform: scale(1.1);
+	box-shadow: 0 6px 16px rgba(37, 211, 102, 0.6);
+}
+</style>
+<style>
+.whatsapp-button {
+	position: fixed;
+	bottom: 80px;
+	right: 20px;
+	z-index: 1000;
+}
+
+.whatsapp-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	background-color: #25D366;
+	border-radius: 50%;
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+	box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+	transition: all 0.3s ease;
+}
+
+.whatsapp-link:hover {
+	background-color: #128C7E;
+	color: white;
+	text-decoration: none;
+	transform: scale(1.1);
+	box-shadow: 0 6px 16px rgba(37, 211, 102, 0.6);
+}
+</style>
 </head>
 
 <body>
@@ -42,6 +106,10 @@
 						<div class="logo_container">
 							<div class="logo"><a href="index.html"><img src="images/logo.png" alt="">Wildwave Safaris</a></div>
 						</div>
+						<div class="header_social_nav ml-3" style="display: flex; align-items: center; gap: 15px;">
+							<a href="https://www.instagram.com/wildwavesafaris?igsh=OTRjeGoyeXN4cGox" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; font-size: 20px; text-decoration: none; transition: all 0.3s ease; padding: 5px; color: #E4405F;"><i class="fa fa-instagram"></i></a>
+							<a href="https://www.tiktok.com/@wildwavesafaris?_t=ZM-8yaxQnBH5SY&_r=1" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; color: #000000; font-weight: bold; font-size: 18px; text-decoration: none; transition: all 0.3s ease; padding: 5px;">T</a>
+						</div>
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
 								<li class="main_nav_item"><a href="home.html">home</a></li>
@@ -49,6 +117,7 @@
 								<li class="main_nav_item"><a href="destinations.html">destinations</a></li>
 								<li class="main_nav_item"><a href="accommodations.html">accommodations</a></li>
 								<li class="main_nav_item"><a href="offers.html">special offers</a></li>
+								<li class="main_nav_item"><a href="booking.html">booking</a></li>
 								<li class="main_nav_item"><a href="contact.html">contact</a></li>
 							</ul>
 						</div>
@@ -76,9 +145,24 @@
 				<li class="menu_item"><a href="destinations.html">Destinations</a></li>
 				<li class="menu_item"><a href="accommodations.html">Accommodations</a></li>
 				<li class="menu_item"><a href="offers.html">Special Offers</a></li>
+				<li class="menu_item"><a href="booking.html">Booking</a></li>
 				<li class="menu_item"><a href="contact.html">Contact</a></li>
 			</ul>
 		</div>
+	</div>
+
+	<!-- WhatsApp Button -->
+	<div class="whatsapp-button">
+		<a href="https://wa.me/254713241666" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+			<i class="fa fa-whatsapp"></i>
+		</a>
+	</div>
+
+	<!-- WhatsApp Button -->
+	<div class="whatsapp-button">
+		<a href="https://wa.me/254713241666" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+			<i class="fa fa-whatsapp"></i>
+		</a>
 	</div>
 
 	<!-- Destinations Hero -->
@@ -120,84 +204,7 @@
 		}, 8000);
 	</script>
 
-	<!-- Top International Destinations -->
-	<div class="intro" style="padding: 80px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-		<div class="container">
-			<div class="row">
-				<div class="col text-center">
-					<h2 class="section_title" style="color: white; margin-bottom: 20px;">Embark on a Journey of Discovery: Explore the World's Most Captivating Destinations and Uncover Hidden Gems</h2>
-					<p style="color: rgba(255,255,255,0.9); font-size: 18px; max-width: 600px; margin: 0 auto 50px;">Discover iconic landmarks and cultural treasures around the world</p>
-				</div>
-			</div>
-			<div class="row align-items-center">
-				<div class="col-lg-3 col-md-6 mb-4">
-					<div class="card" style="border: none; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(255,255,255,0.1); transition: all 0.3s ease; background: rgba(255,255,255,0.95);" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
-						<img src="https://images.unsplash.com/photo-1570097703229-b195d6dd291f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGFyaXMlMjB0b3dlcnxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Eiffel Tower">
-						<div class="card-body" style="padding: 20px;">
-							<h5 style="color: #2d2c2c; font-weight: 700; margin-bottom: 8px;">🗼 Eiffel Tower</h5>
-							<p style="color: #666; font-size: 14px; margin-bottom: 15px;">Paris, France</p>
-							<div style="display: flex; justify-content: space-between; align-items: center;">
-								<div class="price" style="color: #e74c3c; font-weight: 700;">KSH 267,000</div>
-								<button class="btn btn-sm" style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); color: white; border: none; padding: 6px 12px; border-radius: 15px; box-shadow: 0 3px 10px rgba(39, 174, 96, 0.3); cursor: pointer;" onclick="window.location.href='booking.html'">Book</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 mb-4">
-					<div class="card" style="border: none; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(255,255,255,0.1); transition: all 0.3s ease; background: rgba(255,255,255,0.95);" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
-						<img src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHlyYW1pZHN8ZW58MHx8MHx8fDA%3D" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Pyramids">
-						<div class="card-body" style="padding: 20px;">
-							<h5 style="color: #2d2c2c; font-weight: 700; margin-bottom: 8px;">🏛️ Pyramids</h5>
-							<p style="color: #666; font-size: 14px; margin-bottom: 15px;">Giza, Egypt</p>
-							<div style="display: flex; justify-content: space-between; align-items: center;">
-								<div class="price" style="color: #8e44ad; font-weight: 700;">KSH 240,000</div>
-								<button class="btn btn-sm" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; border: none; padding: 6px 12px; border-radius: 15px; box-shadow: 0 3px 10px rgba(52, 152, 219, 0.3); cursor: pointer;" onclick="window.location.href='booking.html'">Book</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 mb-4">
-					<div class="card" style="border: none; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(255,255,255,0.1); transition: all 0.3s ease; background: rgba(255,255,255,0.95);" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
-						<img src="https://plus.unsplash.com/premium_photo-1697730155699-0dffc4bf7097?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWlhbWklMjBmbG9yaWRhfGVufDB8fDB8fHww" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Miami">
-						<div class="card-body" style="padding: 20px;">
-							<h5 style="color: #2d2c2c; font-weight: 700; margin-bottom: 8px;">🏖️ Miami Beach</h5>
-							<p style="color: #666; font-size: 14px; margin-bottom: 15px;">Florida, USA</p>
-							<div style="display: flex; justify-content: space-between; align-items: center;">
-								<div class="price" style="color: #f39c12; font-weight: 700;">KSH 320,000</div>
-								<button class="btn btn-sm" style="background: linear-gradient(135deg, #e67e22 0%, #d35400 100%); color: white; border: none; padding: 6px 12px; border-radius: 15px; box-shadow: 0 3px 10px rgba(230, 126, 34, 0.3); cursor: pointer;" onclick="window.location.href='booking.html'">Book</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 mb-4">
-					<div class="card" style="border: none; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(255,255,255,0.1); transition: all 0.3s ease; background: rgba(255,255,255,0.95);" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
-						<img src="https://images.unsplash.com/photo-1582895516735-25a974f11f2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z3JlYXR3YWxsJTIwb2YlMjBjaGluYXxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Great Wall">
-						<div class="card-body" style="padding: 20px;">
-							<h5 style="color: #2d2c2c; font-weight: 700; margin-bottom: 8px;">🏯 Great Wall</h5>
-							<p style="color: #666; font-size: 14px; margin-bottom: 15px;">China</p>
-							<div style="display: flex; justify-content: space-between; align-items: center;">
-								<div class="price" style="color: #16a085; font-weight: 700;">KSH 293,000</div>
-								<button class="btn btn-sm" style="background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); color: white; border: none; padding: 6px 12px; border-radius: 15px; box-shadow: 0 3px 10px rgba(26, 188, 156, 0.3); cursor: pointer;" onclick="window.location.href='booking.html'">Book</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 mb-4">
-					<div class="card" style="border: none; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(255,255,255,0.1); transition: all 0.3s ease; background: rgba(255,255,255,0.95);" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
-						<img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VGFqJTIwTWFoYWx8ZW58MHx8MHx8fDA%3D" class="card-img-top" style="height: 200px; object-fit: cover;" alt="Taj Mahal">
-						<div class="card-body" style="padding: 20px;">
-							<h5 style="color: #2d2c2c; font-weight: 700; margin-bottom: 8px;">🕌 Taj Mahal</h5>
-							<p style="color: #666; font-size: 14px; margin-bottom: 15px;">Agra, India</p>
-							<div style="display: flex; justify-content: space-between; align-items: center;">
-								<div class="price" style="color: #c0392b; font-weight: 700;">KSH 213,000</div>
-								<button class="btn btn-sm" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white; border: none; padding: 6px 12px; border-radius: 15px; box-shadow: 0 3px 10px rgba(155, 89, 182, 0.3); cursor: pointer;" onclick="window.location.href='booking.html'">Book</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+
 
 	<!-- Destination Highlights -->
 	<div class="intro" style="padding: 100px 0;">
@@ -461,34 +468,38 @@
 						<h5 style="color: #fa9e1b; margin-bottom: 20px;">🇰🇪 Kenya (East Africa)</h5>
 						<div class="row">
 							<div class="col-md-6 mb-3">
-								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-									<div class="card-body" style="padding: 20px;">
-										<h6 style="color: #2d2c2c; font-weight: 600;">Maasai Mara</h6>
-										<p style="color: #666; font-size: 14px; margin: 0;">Wildebeest Migration & Big Five</p>
+								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;">
+									<img src="https://image.shutterstock.com/image-photo/elephants-tsavo-east-west-national-260nw-2102690461.jpg" style="height: 120px; width: 100%; object-fit: cover;" alt="Tsavo National Park">
+									<div class="card-body" style="padding: 15px;">
+										<h6 style="color: #2d2c2c; font-weight: 600; margin-bottom: 8px;">Tsavo National Park</h6>
+										<p style="color: #666; font-size: 13px; margin: 0;">Kenya's largest park with red elephants and diverse landscapes</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 mb-3">
-								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-									<div class="card-body" style="padding: 20px;">
-										<h6 style="color: #2d2c2c; font-weight: 600;">Amboseli</h6>
-										<p style="color: #666; font-size: 14px; margin: 0;">Kilimanjaro views, elephants</p>
+								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;">
+									<img src="https://images.unsplash.com/photo-1553240799-775151b3646d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fE1lcnUlMjBOYXRpb25hbCUyMFBhcmt8ZW58MHx8MHx8fDA%3D" style="height: 120px; width: 100%; object-fit: cover;" alt="Meru National Park">
+									<div class="card-body" style="padding: 15px;">
+										<h6 style="color: #2d2c2c; font-weight: 600; margin-bottom: 8px;">Meru National Park</h6>
+										<p style="color: #666; font-size: 13px; margin: 0;">Untamed wilderness sanctuary famous for Elsa the lioness, featuring diverse ecosystems from riverine forests to open savanna with exceptional wildlife viewing</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 mb-3">
-								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-									<div class="card-body" style="padding: 20px;">
-										<h6 style="color: #2d2c2c; font-weight: 600;">Lake Nakuru</h6>
-										<p style="color: #666; font-size: 14px; margin: 0;">Flamingos, white rhinos</p>
+								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;">
+									<img src="https://media.istockphoto.com/id/666380546/photo/buffalo-lying-in-the-water-on-the-background-of-big-flocks-of-flamingos.webp?a=1&b=1&s=612x612&w=0&k=20&c=fIAUqTaTfVhZMHTIdY3r7lum5gdtVps9EtQT33ndNY8=" style="height: 120px; width: 100%; object-fit: cover;" alt="Lake Nakuru">
+									<div class="card-body" style="padding: 15px;">
+										<h6 style="color: #2d2c2c; font-weight: 600; margin-bottom: 8px;">Lake Nakuru</h6>
+										<p style="color: #666; font-size: 13px; margin: 0;">Pink flamingos and endangered white rhinos sanctuary</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 mb-3">
-								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-									<div class="card-body" style="padding: 20px;">
-										<h6 style="color: #2d2c2c; font-weight: 600;">Samburu</h6>
-										<p style="color: #666; font-size: 14px; margin: 0;">Rare wildlife species</p>
+								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;">
+									<img src="https://images.unsplash.com/photo-1517502252510-68bb1fed55b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8U2FtYnVydXxlbnwwfHwwfHx8MA%3D%3D" style="height: 120px; width: 100%; object-fit: cover;" alt="Samburu">
+									<div class="card-body" style="padding: 15px;">
+										<h6 style="color: #2d2c2c; font-weight: 600; margin-bottom: 8px;">Samburu</h6>
+										<p style="color: #666; font-size: 13px; margin: 0;">Unique wildlife including Grevy's zebra and reticulated giraffe</p>
 									</div>
 								</div>
 							</div>
@@ -499,18 +510,20 @@
 						<h5 style="color: #fa9e1b; margin-bottom: 20px;">🇹🇿 Tanzania</h5>
 						<div class="row">
 							<div class="col-md-6 mb-3">
-								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-									<div class="card-body" style="padding: 20px;">
-										<h6 style="color: #2d2c2c; font-weight: 600;">Serengeti</h6>
-										<p style="color: #666; font-size: 14px; margin: 0;">Great Migration continuation</p>
+								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;">
+									<img src="https://images.unsplash.com/photo-1723366086577-7d12151985a8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fFRhcmFuZ2lyZXxlbnwwfHwwfHx8MA%3D%3D" style="height: 120px; width: 100%; object-fit: cover;" alt="Tarangire">
+									<div class="card-body" style="padding: 15px;">
+										<h6 style="color: #2d2c2c; font-weight: 600; margin-bottom: 8px;">Tarangire</h6>
+										<p style="color: #666; font-size: 13px; margin: 0;">Famous for massive baobab trees and large elephant herds</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 mb-3">
-								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-									<div class="card-body" style="padding: 20px;">
-										<h6 style="color: #2d2c2c; font-weight: 600;">Ngorongoro</h6>
-										<p style="color: #666; font-size: 14px; margin: 0;">UNESCO World Heritage</p>
+								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;">
+									<img src="https://images.unsplash.com/photo-1605019656694-ee239d96fa22?w=400&auto=format&fit=crop&q=60" style="height: 120px; width: 100%; object-fit: cover;" alt="Ruaha">
+									<div class="card-body" style="padding: 15px;">
+										<h6 style="color: #2d2c2c; font-weight: 600; margin-bottom: 8px;">Ruaha</h6>
+										<p style="color: #666; font-size: 13px; margin: 0;">Tanzania's largest park with diverse wildlife and landscapes</p>
 									</div>
 								</div>
 							</div>
@@ -519,18 +532,20 @@
 						<h5 style="color: #fa9e1b; margin-bottom: 20px; margin-top: 30px;">🇺🇬🇷🇼 Uganda & Rwanda</h5>
 						<div class="row">
 							<div class="col-md-6 mb-3">
-								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-									<div class="card-body" style="padding: 20px;">
-										<h6 style="color: #2d2c2c; font-weight: 600;">Bwindi Forest</h6>
-										<p style="color: #666; font-size: 14px; margin: 0;">Gorilla trekking</p>
+								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;">
+									<img src="https://images.unsplash.com/photo-1711198587711-2020c1e4a3a3?w=400&auto=format&fit=crop&q=60" style="height: 120px; width: 100%; object-fit: cover;" alt="Bwindi Forest">
+									<div class="card-body" style="padding: 15px;">
+										<h6 style="color: #2d2c2c; font-weight: 600; margin-bottom: 8px;">Bwindi Forest</h6>
+										<p style="color: #666; font-size: 13px; margin: 0;">Mountain gorilla trekking in impenetrable rainforest</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 mb-3">
-								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-									<div class="card-body" style="padding: 20px;">
-										<h6 style="color: #2d2c2c; font-weight: 600;">Volcanoes NP</h6>
-										<p style="color: #666; font-size: 14px; margin: 0;">Mountain gorillas (Rwanda)</p>
+								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;">
+									<img src="https://images.unsplash.com/photo-1509780764860-beca5b971c4b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fFZvbGNhbm9lcyUyME5QfGVufDB8fDB8fHww" style="height: 120px; width: 100%; object-fit: cover;" alt="Volcanoes NP">
+									<div class="card-body" style="padding: 15px;">
+										<h6 style="color: #2d2c2c; font-weight: 600; margin-bottom: 8px;">Volcanoes NP</h6>
+										<p style="color: #666; font-size: 13px; margin: 0;">Rwanda's premier mountain gorilla destination</p>
 									</div>
 								</div>
 							</div>
@@ -541,18 +556,20 @@
 						<h5 style="color: #fa9e1b; margin-bottom: 20px;">🇿🇦 Southern Africa</h5>
 						<div class="row">
 							<div class="col-md-6 mb-3">
-								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-									<div class="card-body" style="padding: 20px;">
-										<h6 style="color: #2d2c2c; font-weight: 600;">Kruger NP</h6>
-										<p style="color: #666; font-size: 14px; margin: 0;">Africa's largest game reserve</p>
+								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;">
+									<img src="https://images.unsplash.com/photo-1428681442774-edb18d834ef0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGtydWdlciUyMG5hdGluYWwlMjBwYXJrfGVufDB8fDB8fHww" style="height: 120px; width: 100%; object-fit: cover;" alt="Kruger NP">
+									<div class="card-body" style="padding: 15px;">
+										<h6 style="color: #2d2c2c; font-weight: 600; margin-bottom: 8px;">Kruger NP</h6>
+										<p style="color: #666; font-size: 13px; margin: 0;">South Africa's flagship park with Big Five wildlife</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 mb-3">
-								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-									<div class="card-body" style="padding: 20px;">
-										<h6 style="color: #2d2c2c; font-weight: 600;">Okavango Delta</h6>
-										<p style="color: #666; font-size: 14px; margin: 0;">Water-based safari</p>
+								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;">
+									<img src="https://images.unsplash.com/photo-1531208853003-c1ec1b8a81d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8T2thdmFuZ28lMjBEZWx0YXxlbnwwfHwwfHx8MA%3D%3D" style="height: 120px; width: 100%; object-fit: cover;" alt="Okavango Delta">
+									<div class="card-body" style="padding: 15px;">
+										<h6 style="color: #2d2c2c; font-weight: 600; margin-bottom: 8px;">Okavango Delta</h6>
+										<p style="color: #666; font-size: 13px; margin: 0;">Botswana's pristine water-based safari paradise</p>
 									</div>
 								</div>
 							</div>
@@ -563,18 +580,20 @@
 						<h5 style="color: #fa9e1b; margin-bottom: 20px;">🌍 Global Wildlife</h5>
 						<div class="row">
 							<div class="col-md-6 mb-3">
-								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-									<div class="card-body" style="padding: 20px;">
-										<h6 style="color: #2d2c2c; font-weight: 600;">Ranthambore</h6>
-										<p style="color: #666; font-size: 14px; margin: 0;">Bengal tiger safaris (India)</p>
+								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;">
+									<img src="https://images.unsplash.com/photo-1719033103192-73c2ddcad66e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8UmFudGhhbWJvcmV8ZW58MHx8MHx8fDA%3D" style="height: 120px; width: 100%; object-fit: cover;" alt="Ranthambore">
+									<div class="card-body" style="padding: 15px;">
+										<h6 style="color: #2d2c2c; font-weight: 600; margin-bottom: 8px;">Ranthambore</h6>
+										<p style="color: #666; font-size: 13px; margin: 0;">India's premier Bengal tiger safari destination</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 mb-3">
-								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-									<div class="card-body" style="padding: 20px;">
-										<h6 style="color: #2d2c2c; font-weight: 600;">Yellowstone</h6>
-										<p style="color: #666; font-size: 14px; margin: 0;">Bison, wolves, geysers (USA)</p>
+								<div class="card" style="border: none; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden;">
+									<img src="https://plus.unsplash.com/premium_photo-1669050702623-40e1184fa2b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8WWVsbG93c3RvbmUlMjB1c3xlbnwwfHwwfHx8MA%3D%3D" style="height: 120px; width: 100%; object-fit: cover;" alt="Yellowstone">
+									<div class="card-body" style="padding: 15px;">
+										<h6 style="color: #2d2c2c; font-weight: 600; margin-bottom: 8px;">Yellowstone</h6>
+										<p style="color: #666; font-size: 13px; margin: 0;">America's first national park with geysers and wildlife</p>
 									</div>
 								</div>
 							</div>
@@ -588,50 +607,187 @@
 				<h3 class="text-center mb-4" style="color: #2d2c2c;">🏔️ Mountain Adventures & Climbing</h3>
 				<div class="row">
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Mount Kilimanjaro</h5>
-								<p style="color: #666;">Africa's tallest mountain - Tanzania</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://images.unsplash.com/photo-1609198092458-38a293c7ac4b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW91bnQlMjBraWxpbWFuamFyb3xlbnwwfHwwfHx8MA%3D%3D" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Mount Kilimanjaro" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(231, 76, 60, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">5,895m</div>
+								<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); height: 60px;"></div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Mount Kilimanjaro</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #e74c3c; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Tanzania, East Africa</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Africa's highest peak and the world's tallest free-standing mountain. Experience diverse ecosystems from tropical rainforest to arctic summit conditions. No technical climbing required.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-clock-o" style="color: #3498db; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">6-8 Days</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-signal" style="color: #f39c12; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Moderate</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(231, 76, 60, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Explore Trek</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Mount Kenya</h5>
-								<p style="color: #666;">Climbing and hiking adventures</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://plus.unsplash.com/premium_photo-1661821182906-e465194a34ac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TW91bnQlMjBLZW55YXxlbnwwfHwwfHx8MA%3D%3D" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Mount Kenya" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(46, 204, 113, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">5,199m</div>
+								<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); height: 60px;"></div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Mount Kenya</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #2ecc71; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Kenya, East Africa</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Kenya's highest mountain and second-highest in Africa. Features dramatic peaks, glacial valleys, and unique alpine vegetation. Technical climbing routes available for experienced climbers.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-clock-o" style="color: #3498db; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">4-6 Days</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-signal" style="color: #e67e22; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Challenging</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(46, 204, 113, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Explore Trek</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Swiss Alps</h5>
-								<p style="color: #666;">Alpine luxury and skiing</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://media.istockphoto.com/id/1955600222/photo/portrait-of-family-on-ski-slope.webp?a=1&b=1&s=612x612&w=0&k=20&c=62cIHMfvQCCpgKUxZtEvZfcWD0mSmOVXookUBm_Zx_4=" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Swiss Alps" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(52, 152, 219, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">4,478m</div>
+								<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); height: 60px;"></div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Swiss Alps</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #3498db; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Switzerland, Europe</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Iconic European mountain range featuring the Matterhorn and Mont Blanc. World-class skiing, luxury alpine resorts, scenic railways, and pristine hiking trails through stunning valleys.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-clock-o" style="color: #3498db; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">3-7 Days</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-signal" style="color: #2ecc71; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Easy-Moderate</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(52, 152, 219, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Explore Alps</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Himalayas</h5>
-								<p style="color: #666;">Nepal & Tibet expeditions</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://plus.unsplash.com/premium_photo-1661943546908-7f84a497f5e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8SGltYWxheWFzfGVufDB8fDB8fHww" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Himalayas" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(155, 89, 182, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">8,848m</div>
+								<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); height: 60px;"></div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Himalayas</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #9b59b6; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Nepal & Tibet</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Home to Mount Everest and 14 of the world's highest peaks. Experience Sherpa culture, ancient monasteries, and breathtaking base camp treks through the roof of the world.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-clock-o" style="color: #3498db; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">12-16 Days</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-signal" style="color: #e74c3c; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Extreme</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(155, 89, 182, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Explore Trek</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Andes Mountains</h5>
-								<p style="color: #666;">Peru & Chile adventures</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://images.unsplash.com/photo-1598859409659-b88fc15bbc2f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QW5kZXMlMjBNb3VudGFpbnN8ZW58MHx8MHx8fDA%3D" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Andes Mountains" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(230, 126, 34, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">6,962m</div>
+								<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); height: 60px;"></div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Andes Mountains</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #e67e22; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Peru, Chile & Argentina</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">World's longest continental mountain range stretching 7,000km. Discover Machu Picchu, Aconcagua peak, ancient Inca trails, and diverse ecosystems from tropical to glacial.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-clock-o" style="color: #3498db; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">5-10 Days</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-signal" style="color: #f39c12; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Moderate-Hard</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #e67e22 0%, #d35400 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(230, 126, 34, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Explore Trek</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Rocky Mountains</h5>
-								<p style="color: #666;">USA & Canada wilderness</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://images.unsplash.com/photo-1563242152-568e5de6f2b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Um9ja3klMjBNb3VudGFpbnN8ZW58MHx8MHx8fDA%3D" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Rocky Mountains" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(26, 188, 156, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">4,401m</div>
+								<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); height: 60px;"></div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Rocky Mountains</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #1abc9c; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">USA & Canada</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Pristine wilderness spanning 4,800km from New Mexico to British Columbia. Experience Yellowstone, Banff, glacier-fed lakes, diverse wildlife, and world-class hiking trails.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-clock-o" style="color: #3498db; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">3-8 Days</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-signal" style="color: #2ecc71; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Easy-Moderate</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(26, 188, 156, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Explore Trek</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -643,50 +799,187 @@
 				<h3 class="text-center mb-4" style="color: #2d2c2c;">🏖️ Beach & Coastal Getaways</h3>
 				<div class="row">
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Diani Beach</h5>
-								<p style="color: #666;">Kenya's coastal paradise</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8RGlhbmklMjBCZWFjaHxlbnwwfHwwfHx8MA%3D%3D" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Diani Beach" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(52, 152, 219, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">25°C</div>
+								<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); height: 60px;"></div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Diani Beach</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #3498db; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Kenya, East Africa</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Kenya's premier coastal paradise with pristine white sand beaches, coral reefs, and luxury resorts. Perfect for water sports, dhow sailing, and Swahili cultural experiences.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-sun-o" style="color: #f39c12; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Year-round</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-star" style="color: #e74c3c; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Luxury</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(52, 152, 219, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Book Beach</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Zanzibar</h5>
-								<p style="color: #666;">White-sand beaches & Swahili culture</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://images.unsplash.com/photo-1621583628955-42fbc37bf424?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8WmFuemliYXJ8ZW58MHx8MHx8fDA%3D" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Zanzibar" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(26, 188, 156, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">28°C</div>
+								<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); height: 60px;"></div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Zanzibar</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #1abc9c; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Tanzania, Indian Ocean</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Spice Island paradise with UNESCO Stone Town, pristine beaches, and rich Swahili culture. Experience spice tours, historic architecture, and crystal-clear waters.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-sun-o" style="color: #f39c12; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Tropical</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-star" style="color: #e74c3c; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Cultural</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(26, 188, 156, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Book Island</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Maldives</h5>
-								<p style="color: #666;">Luxury overwater villas</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8TWFsZGl2ZXN8ZW58MHx8MHx8fDA%3D" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Maldives" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(155, 89, 182, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">30°C</div>
+								<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); height: 60px;"></div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Maldives</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #9b59b6; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Indian Ocean</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Ultimate luxury with overwater villas, pristine coral atolls, and world-class diving. Private island resorts offering unparalleled privacy and tropical perfection.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-sun-o" style="color: #f39c12; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Perfect</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-star" style="color: #e74c3c; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Ultra-Luxury</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(155, 89, 182, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Book Villa</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Santorini</h5>
-								<p style="color: #666;">Greek island luxury</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://images.unsplash.com/photo-1580502304784-8985b7eb7260?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8U2FudG9yaW5pfGVufDB8fDB8fHww" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Santorini" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(52, 152, 219, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">24°C</div>
+								<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); height: 60px;"></div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Santorini</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #3498db; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Greece, Mediterranean</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Iconic Greek island with dramatic cliffs, white-washed villages, and spectacular sunsets. Luxury cave hotels, volcanic beaches, and world-renowned cuisine.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-sun-o" style="color: #f39c12; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Summer</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-star" style="color: #e74c3c; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Romantic</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(52, 152, 219, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Book Greece</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Bali</h5>
-								<p style="color: #666;">Indonesian tropical paradise</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://images.unsplash.com/photo-1604999333679-b86d54738315?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8QmFsaXxlbnwwfHwwfHx8MA%3D%3D" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Bali" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(230, 126, 34, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">27°C</div>
+								<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); height: 60px;"></div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Bali</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #e67e22; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Indonesia, Southeast Asia</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Island of the Gods featuring ancient temples, terraced rice fields, and pristine beaches. Luxury resorts, spa retreats, and vibrant Hindu culture create magical experiences.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-sun-o" style="color: #f39c12; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Tropical</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-star" style="color: #e74c3c; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Spiritual</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #e67e22 0%, #d35400 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(230, 126, 34, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Book Bali</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Seychelles</h5>
-								<p style="color: #666;">Pristine Indian Ocean islands</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2V5Y2hlbGxlc3xlbnwwfHwwfHx8MA%3D%3D" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Seychelles" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(46, 204, 113, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">26°C</div>
+								<div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); height: 60px;"></div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Seychelles</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #2ecc71; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Indian Ocean</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">115 pristine granite islands with unique flora and fauna. Home to giant tortoises, rare birds, and some of the world's most beautiful beaches with crystal-clear waters.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-sun-o" style="color: #f39c12; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Year-round</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-star" style="color: #e74c3c; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Pristine</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(46, 204, 113, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Book Paradise</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -696,78 +989,266 @@
 			<!-- Cultural Experiences Category -->
 			<div id="cultural" class="category-content" style="display: none;">
 				<h3 class="text-center mb-4" style="color: #2d2c2c;">🏛️ Cultural Experiences & Historic Sites</h3>
-				<div class="row">
+				<div class="row justify-content-center align-items-stretch">
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Egyptian Pyramids</h5>
-								<p style="color: #666;">Ancient wonders of Giza</p>
+						<div class="card h-100" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden; height: 250px;">
+								<img src="https://images.unsplash.com/photo-1628641791053-3369ac72d023?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8RWd5cHRpYW4lMjBQeXJhbWlkc3xlbnwwfHwwfHx8MA%3D%3D" style="height: 100%; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Egyptian Pyramids" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(230, 126, 34, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">4500 Years</div>
+							</div>
+							<div class="card-body d-flex flex-column" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Egyptian Pyramids</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #e67e22; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Giza, Egypt</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Last surviving Wonder of the Ancient World. Marvel at the Great Pyramid of Khufu, Sphinx, and ancient burial chambers revealing pharaonic mysteries.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-clock-o" style="color: #3498db; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Full Day</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-star" style="color: #f39c12; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">UNESCO</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #e67e22 0%, #d35400 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(230, 126, 34, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Explore Egypt</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Eiffel Tower</h5>
-								<p style="color: #666;">Iconic Paris landmark</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=500&auto=format&fit=crop&q=60" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Eiffel Tower" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(52, 152, 219, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">324m</div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Eiffel Tower</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #3498db; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Paris, France</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Iconic iron lattice tower and symbol of Paris. Enjoy panoramic city views, fine dining at Le Jules Verne, and romantic evening illuminations from Champ de Mars.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-clock-o" style="color: #3498db; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Half Day</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-star" style="color: #f39c12; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Iconic</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(52, 152, 219, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Visit Paris</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Great Wall of China</h5>
-								<p style="color: #666;">Ancient Chinese marvel</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=500&auto=format&fit=crop&q=60" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Great Wall of China" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(231, 76, 60, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">21,000km</div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Great Wall of China</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #e74c3c; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Beijing, China</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Ancient fortification spanning over 13,000 miles. Walk along restored sections at Badaling and Mutianyu, experiencing 2,000 years of Chinese history and engineering marvel.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-clock-o" style="color: #3498db; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Full Day</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-star" style="color: #f39c12; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">UNESCO</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(231, 76, 60, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Explore China</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Machu Picchu</h5>
-								<p style="color: #666;">Lost city of the Incas - Peru</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=500&auto=format&fit=crop&q=60" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Machu Picchu" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(46, 204, 113, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">2,430m</div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Machu Picchu</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #2ecc71; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Cusco, Peru</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Lost city of the Incas perched high in the Andes. Marvel at precise stone architecture, terraced gardens, and mystical atmosphere of this 15th-century citadel.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-clock-o" style="color: #3498db; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">2-4 Days</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-star" style="color: #f39c12; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">UNESCO</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(46, 204, 113, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Visit Peru</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Taj Mahal</h5>
-								<p style="color: #666;">India's monument of love</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=500&auto=format&fit=crop&q=60" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Taj Mahal" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(155, 89, 182, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">1653 AD</div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Taj Mahal</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #9b59b6; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Agra, India</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Eternal symbol of love built by Shah Jahan for his wife Mumtaz. Marvel at pristine white marble, intricate inlay work, and perfect symmetry of Mughal architecture.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-clock-o" style="color: #3498db; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Half Day</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-star" style="color: #f39c12; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">UNESCO</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(155, 89, 182, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Visit India</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Colosseum</h5>
-								<p style="color: #666;">Ancient Roman amphitheater</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=500&auto=format&fit=crop&q=60" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Colosseum" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(52, 152, 219, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">80 AD</div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Colosseum</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #3498db; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Rome, Italy</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Largest amphitheater ever built, hosting gladiatorial contests and public spectacles. Explore underground chambers, arena floor, and imagine 50,000 spectators cheering.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-clock-o" style="color: #3498db; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">Half Day</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-star" style="color: #f39c12; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">UNESCO</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(52, 152, 219, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Visit Rome</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Angkor Wat</h5>
-								<p style="color: #666;">Cambodia's temple complex</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://plus.unsplash.com/premium_photo-1661924223647-40abbac077c0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8QW5na29yJTIwV2F0fGVufDB8fDB8fHww" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Angkor Wat" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(26, 188, 156, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">12th Century</div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Angkor Wat</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #1abc9c; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Siem Reap, Cambodia</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">World's largest religious monument and masterpiece of Khmer architecture. Explore intricate bas-reliefs, towering spires, and witness magical sunrise over ancient temples.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-clock-o" style="color: #3498db; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">2-3 Days</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-star" style="color: #f39c12; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">UNESCO</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(26, 188, 156, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Visit Cambodia</button>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Petra</h5>
-								<p style="color: #666;">Jordan's rose-red city</p>
+						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+							<div style="position: relative; overflow: hidden;">
+								<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&auto=format&fit=crop&q=60" style="height: 220px; width: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Petra" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+								<div style="position: absolute; top: 15px; right: 15px; background: rgba(230, 126, 34, 0.9); color: white; padding: 6px 12px; border-radius: 15px; font-weight: 600; font-size: 12px;">300 BC</div>
+							</div>
+							<div class="card-body" style="padding: 25px;">
+								<h5 style="color: #2d2c2c; margin-bottom: 12px; font-weight: 700;">Petra</h5>
+								<div style="display: flex; align-items: center; margin-bottom: 15px;">
+									<i class="fa fa-map-marker" style="color: #e67e22; margin-right: 8px;"></i>
+									<span style="color: #666; font-size: 14px;">Wadi Musa, Jordan</span>
+								</div>
+								<p style="color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Rose-red city carved into sandstone cliffs by Nabataeans. Walk through the Siq canyon to discover the Treasury, Monastery, and ancient tombs in this archaeological wonder.</p>
+								<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-clock-o" style="color: #3498db; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">2 Days</span>
+									</div>
+									<div style="display: flex; align-items: center;">
+										<i class="fa fa-star" style="color: #f39c12; margin-right: 5px;"></i>
+										<span style="font-size: 13px; color: #666;">UNESCO</span>
+									</div>
+								</div>
+								<div style="text-align: center;">
+									<button class="btn" style="background: linear-gradient(135deg, #e67e22 0%, #d35400 100%); color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(230, 126, 34, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" onclick="window.location.href='booking.html'">Visit Jordan</button>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 mb-4">
-						<div class="card" style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-							<div class="card-body text-center" style="padding: 30px;">
-								<h5 style="color: #2d2c2c; margin-bottom: 15px;">Kyoto Temples</h5>
-								<p style="color: #666;">Traditional Japanese culture</p>
-							</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Chat with Us Section -->
+	<div style="padding: 60px 0; background: #f8f9fa;">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="card" style="border: none; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.1); background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; padding: 40px 30px;">
+						<div style="margin-bottom: 25px;">
+							<i class="fa fa-comments" style="font-size: 48px; color: rgba(255,255,255,0.9); margin-bottom: 20px;"></i>
+							<h3 style="color: white; margin-bottom: 15px; font-weight: 700;">Chat with Us to Craft Destinations Just for You</h3>
+							<p style="color: rgba(255,255,255,0.9); font-size: 16px; line-height: 1.6; margin-bottom: 30px;">Let our travel experts create a personalized itinerary tailored to your dreams and preferences. Get instant assistance and custom recommendations.</p>
 						</div>
+						<a href="https://wa.me/254713241666?text=Hi%20Wildwave%20Safaris,%20I%27d%20like%20to%20chat%20about%20crafting%20a%20custom%20destination%20experience%20just%20for%20me." target="_blank" class="btn" style="background: #25D366; color: white; border: none; padding: 15px 30px; border-radius: 50px; font-weight: 600; font-size: 16px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(37, 211, 102, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(37, 211, 102, 0.3)'">
+							<i class="fa fa-whatsapp" style="font-size: 20px;"></i>
+							Chat Now
+						</a>
 					</div>
 				</div>
 			</div>
