@@ -220,6 +220,14 @@ $(document).ready(function()
 				}
 			});
 
+			$('.menu_overlay').on('click', function()
+			{
+				if(menuActive)
+				{
+					closeMenu();
+				}
+			});
+
 	
 		}
 	}
@@ -227,12 +235,16 @@ $(document).ready(function()
 	function openMenu()
 	{
 		menu.addClass('active');
+		$('.menu_overlay').addClass('active');
+		$('body').css('overflow', 'hidden');
 		menuActive = true;
 	}
 
 	function closeMenu()
 	{
 		menu.removeClass('active');
+		$('.menu_overlay').removeClass('active');
+		$('body').css('overflow', '');
 		menuActive = false;
 	}
 
