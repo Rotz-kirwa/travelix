@@ -45,6 +45,39 @@
 	transform: scale(1.1);
 	box-shadow: 0 6px 16px rgba(37, 211, 102, 0.6);
 }
+
+.partner-logo:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+}
+
+.hero-slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.hero-slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 1.5s ease-in-out;
+}
+
+.hero-slide.active {
+	opacity: 1;
+}
+
+.hero-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 </style>
 </head>
 
@@ -125,9 +158,20 @@
 
 	<!-- About Hero -->
 	<div class="intro" style="padding-top: 200px; padding-bottom: 100px; position: relative; overflow: hidden;">
-		<video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;" autoplay muted loop>
-			<source src="https://videos.pexels.com/video-files/20616363/20616363-uhd_2560_1440_30fps.mp4" type="video/mp4">
-		</video>
+		<div class="hero-slider">
+			<div class="hero-slide active">
+				<img src="https://i.pinimg.com/736x/29/26/80/292680a3d11b6bf770daf046d0939b0d.jpg" alt="Safari">
+			</div>
+			<div class="hero-slide">
+				<img src="https://i.pinimg.com/736x/fb/0f/8b/fb0f8b3d08273eb974e47cfa2eed114f.jpg" alt="Safari">
+			</div>
+			<div class="hero-slide">
+				<img src="https://i.pinimg.com/736x/0e/c0/bc/0ec0bc8ae7e52e8415eed84d61701279.jpg" alt="Safari">
+			</div>
+			<div class="hero-slide">
+				<img src="https://i.pinimg.com/736x/f3/cc/ee/f3ccee70f5657323607949d44b618d3f.jpg" alt="Safari">
+			</div>
+		</div>
 		<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(49, 18, 75, 0.6); z-index: 2;"></div>
 		<div class="container" style="position: relative; z-index: 3;">
 			<div class="row">
@@ -346,6 +390,68 @@
 		</div>
 	</div>
 
+	<!-- Partners Section -->
+	<div class="partners" style="padding: 100px 0; background: #f8f9fa;">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h2 class="section_title">Our Trusted Partners</h2>
+					<p style="max-width: 700px; margin: 20px auto 60px; font-size: 16px; color: #666;">We collaborate with leading organizations in tourism, conservation, and hospitality to deliver exceptional safari experiences</p>
+				</div>
+			</div>
+			<div class="row align-items-center justify-content-center">
+				<div class="col-lg-3 col-md-4 col-6 mb-4">
+					<div class="partner-logo" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform 0.3s ease;">
+						<i class="fa fa-flag" style="font-size: 40px; color: #006600; margin-bottom: 10px;"></i>
+						<div style="font-weight: 700; font-size: 14px; color: #2d2c2c; text-align: center;">Kenya Tourism Board</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 mb-4">
+					<div class="partner-logo" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform 0.3s ease;">
+						<i class="fa fa-binoculars" style="font-size: 40px; color: #fa9e1b; margin-bottom: 10px;"></i>
+						<div style="font-weight: 700; font-size: 14px; color: #2d2c2c; text-align: center;">SafariBookings</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 mb-4">
+					<div class="partner-logo" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform 0.3s ease;">
+						<i class="fa fa-tripadvisor" style="font-size: 40px; color: #00AF87; margin-bottom: 10px;"></i>
+						<div style="font-weight: 700; font-size: 14px; color: #2d2c2c; text-align: center;">TripAdvisor</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 mb-4">
+					<div class="partner-logo" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform 0.3s ease;">
+						<i class="fa fa-paw" style="font-size: 40px; color: #228B22; margin-bottom: 10px;"></i>
+						<div style="font-weight: 700; font-size: 13px; color: #2d2c2c; text-align: center;">Kenya Wildlife Service</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 mb-4">
+					<div class="partner-logo" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform 0.3s ease;">
+						<i class="fa fa-plane" style="font-size: 40px; color: #003E7E; margin-bottom: 10px;"></i>
+						<div style="font-weight: 700; font-size: 14px; color: #2d2c2c; text-align: center;">IATA</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 mb-4">
+					<div class="partner-logo" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform 0.3s ease;">
+						<i class="fa fa-leaf" style="font-size: 40px; color: #000000; margin-bottom: 10px;"></i>
+						<div style="font-weight: 700; font-size: 14px; color: #2d2c2c; text-align: center;">WWF</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 mb-4">
+					<div class="partner-logo" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform 0.3s ease;">
+						<i class="fa fa-bed" style="font-size: 40px; color: #003580; margin-bottom: 10px;"></i>
+						<div style="font-weight: 700; font-size: 14px; color: #2d2c2c; text-align: center;">Booking.com</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 mb-4">
+					<div class="partner-logo" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform 0.3s ease;">
+						<i class="fa fa-home" style="font-size: 40px; color: #FF5A5F; margin-bottom: 10px;"></i>
+						<div style="font-weight: 700; font-size: 14px; color: #2d2c2c; text-align: center;">Airbnb</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Footer -->
 	<footer class="footer" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); padding: 80px 0 40px; color: white;">
 		<div class="container">
@@ -358,8 +464,9 @@
 							</div>
 							<p class="footer_about_text" style="color: #bdc3c7; line-height: 1.6; margin-bottom: 30px;">Your premier safari and adventure travel partner. We specialize in creating extraordinary wildlife experiences and cultural adventures across the globe with unparalleled service.</p>
 							<ul class="footer_social_list" style="display: flex; gap: 15px; list-style: none; padding: 0; margin: 0;">
-								<li class="footer_social_item"><a href="https://www.tiktok.com/@wildwavesafaris" target="_blank" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #000000; border-radius: 50%; color: white; text-decoration: none; transition: all 0.3s ease; font-weight: bold; font-size: 18px;">T</a></li>
-								<li class="footer_social_item"><a href="https://www.instagram.com/wildwavesafaris" target="_blank" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); border-radius: 50%; color: white; text-decoration: none; transition: all 0.3s ease;"><i class="fa fa-instagram" style="font-size: 18px;"></i></a></li>
+								<li class="footer_social_item"><a href="https://www.instagram.com/wildwavesafaris" target="_blank" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); border-radius: 50%; color: white; text-decoration: none; transition: all 0.3s ease;"><i class="fa fa-instagram" style="font-size: 18px;"></i></a></li>
+								<li class="footer_social_item"><a href="https://www.facebook.com/share/16kHvGDuwT/" target="_blank" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #1877F2; border-radius: 50%; color: white; text-decoration: none; transition: all 0.3s ease;"><i class="fa fa-facebook" style="font-size: 18px;"></i></a></li>
+								<li class="footer_social_item"><a href="https://www.tiktok.com/@wildwavesafaris" target="_blank" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #000000; border-radius: 50%; color: white; text-decoration: none; transition: all 0.3s ease;"><svg style="width:16px;height:16px;fill:#fff;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg></a></li>
 							</ul>
 						</div>
 					</div>
@@ -450,6 +557,24 @@
 <script src="styles/bootstrap4/popper.js"></script>
 <script src="styles/bootstrap4/bootstrap.min.js"></script>
 <script src="js/custom.js"></script>
+<script>
+// Hero slider
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-slide');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+	slides.forEach(slide => slide.classList.remove('active'));
+	slides[index].classList.add('active');
+}
+
+function nextSlide() {
+	currentSlide = (currentSlide + 1) % totalSlides;
+	showSlide(currentSlide);
+}
+
+setInterval(nextSlide, 4000);
+</script>
 
 </body>
 </html>
