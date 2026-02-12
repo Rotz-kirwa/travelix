@@ -25,6 +25,19 @@
 <link rel="stylesheet" type="text/css" href="styles/booking-widget.css">
 <link rel="stylesheet" type="text/css" href="styles/safari-button.css">
 <link rel="stylesheet" type="text/css" href="styles/footer-social.css">
+<style>
+@media (max-width: 991px) {
+	.contact_info_bar { display: none; }
+	.header_social_nav { display: none !important; }
+	.content_search { display: none !important; }
+	.logo a { font-size: 16px !important; }
+	.logo img { width: 25px !important; height: 25px !important; }
+}
+@media (max-width: 575px) {
+	.home h1 { font-size: 36px !important; }
+	.home_slider_button { font-size: 12px !important; padding: 8px 20px !important; }
+}
+</style>
 </head>
 
 <body>
@@ -52,31 +65,7 @@
 			</div>
 		</div>
 
-		<!-- Top Bar -->
 
-		<div class="top_bar">
-			<div class="container">
-				<div class="row">
-					<div class="col d-flex flex-row">
-						<div class="phone">+1 (555) 123-TRAVEL</div>
-						<div class="social">
-							<ul class="social_list">
-								<li class="social_list_item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="https://www.instagram.com/wildwavesafaris?igsh=OTRjeGoyeXN4cGox" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="https://www.tiktok.com/@wildwavesafaris?_t=ZM-8yaxQnBH5SY&_r=1" target="_blank" rel="noopener noreferrer">T</a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							</ul>
-						</div>
-						<div class="user_box ml-auto">
-							<div class="user_box_login user_box_link"><a href="#">login</a></div>
-							<div class="user_box_register user_box_link"><a href="#">register</a></div>
-						</div>
-					</div>
-				</div>
-			</div>		
-		</div>
 
 		<!-- Main Navigation -->
 
@@ -85,7 +74,7 @@
 				<div class="row">
 					<div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
 						<div class="logo_container">
-							<div class="logo"><a href="#"><img src="images/logo.png" alt="">Wild Wave Safari</a></div>
+							<div class="logo"><a href="home.html"><img src="images/logo.png" alt="">Wildwave Safaris</a></div>
 						</div>
 						<div class="header_social_nav ml-3" style="display: flex; align-items: center; gap: 15px;">
 							<a href="https://www.instagram.com/wildwavesafaris?igsh=OTRjeGoyeXN4cGox" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; font-size: 20px; text-decoration: none; transition: all 0.3s ease; padding: 5px; color: #E4405F;"><i class="fa fa-instagram"></i></a>
@@ -145,7 +134,7 @@
 	<div class="menu trans_500">
 		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
 			<div class="menu_close_container"><div class="menu_close"></div></div>
-			<div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt="">Wild Wave Safari</a></div>
+			<div class="logo menu_logo"><a href="home.html"><img src="images/logo.png" alt="">Wildwave Safaris</a></div>
 			<ul>
 				<li class="menu_item"><a href="#">home</a></li>
 				<li class="menu_item"><a href="about.html">about us</a></li>
